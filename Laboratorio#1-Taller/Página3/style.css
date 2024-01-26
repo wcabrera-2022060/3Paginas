@@ -1,0 +1,629 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(240, 222, 136)
+}
+
+/*.encabezado{
+    background-color: #16233F;
+    height: 8vi;
+}*/
+
+.centrarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #0A182E;
+}
+
+
+.logo {
+    margin: 2vi;
+    margin-left: 12vi;
+    width: 14vi;
+    height: 5vi;
+}
+
+.centrardiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vi;
+    margin-top: 15vi;
+}
+
+
+
+.lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    background-color: wheat;
+}
+
+.descripcionKinal {
+    padding: 2vi;
+    margin: 1vi;
+    font-size: 1.5vi;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vi;
+    height: 20vi;
+    background-color: #23376D;
+}
+
+.descripcionValores {
+    padding: 2vi;
+    margin: 1vi;
+    font-size: 1vi;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vi;
+    height: 10vi;
+    background-color: #23376D;
+}
+
+.descripcionEdu {
+    padding: 2vi;
+    margin: 1vi;
+    font-size: 1vi;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vi;
+    height: 10vi;
+    background-color: #23376D;
+}
+
+
+#campus {
+    width: 100%;
+}
+
+.descripcionFoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloEdu {
+    margin-left: 1vi;
+    font-size: 3vi;
+}
+
+.fotosAlumnos {
+    width: 30vi;
+}
+
+#patrocinadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vi;
+    color: #FFF;
+    background-color: #0A182E;
+    margin-top: 5vi;
+}
+
+.logoPatrocinadores {
+    width: 10vi;
+}
+
+.filaPatrocinadores {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vi;
+}
+
+.tituloDescripcion {
+    margin: 4vi;
+    font-size: 3vi;
+}
+
+
+/*footer*/
+
+.page-footer {
+    margin-top: 5vi;
+    background-color: #0A182E;
+    width: 100%;
+    height: 15vi;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+
+.contenidoFooter {
+    margin: 1vi;
+    margin-top: 3vi;
+    font-size: 1vi;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vi;
+    height: 10vi;
+}
+
+#logoKinal {
+    width: 10vi;
+}
+
+.derechos {
+    width: 100%;
+    background-color: #010814;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*redes*/
+
+.card {
+    display: flex;
+    height: 70px;
+    width: 270px;
+}
+
+.card svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.card .social-link1,
+.card .social-link2,
+.card .social-link3,
+.card .social-link4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vi;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+}
+
+.card svg {
+    transform: scale(1);
+}
+
+.card .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+    background-color: #00ccff;
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3:hover {
+    background-color: #5865f2;
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4:hover {
+    background-color: #12a50b;
+    animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*animaciones de menu hamburguesa*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Shrikhand');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 450px) {
+    body {
+        font-size: 1.25rem;
+    }
+}
+
+.page-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: visible;
+    z-index: 200;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    min-height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.page-tagline {
+    font-size: 1.5vi;
+    margin: 2vi;
+    font-weight: 700;
+    z-index: 100;
+}
+
+.page-tagline a {
+    color: #123965;
+    text-decoration: none;
+}
+
+.page-title {
+    margin-bottom: 1.5rem;
+    font-family: 'Shrikhand', serif;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+@media (min-width: 450px) {
+    .page-title {
+        font-size: 3rem;
+    }
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3rem 1rem 1rem;
+    width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+    background-color: white;
+    /*se puede quitar*/
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.45s 0.45s ease, transform 0s 1.2s;
+}
+
+.menu ol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    width: 100%;
+}
+
+@media (min-width: 820px) {
+    .menu ol {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.menu ol li {
+    display: grid;
+    grid-column: span 1;
+    grid-gap: 1rem;
+    overflow: hidden;
+}
+
+.menu ol a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #2269bb;
+    background-color: #2269bb;
+    border-radius: 2px;
+}
+
+@media (min-width: 450px) {
+    .menu ol a {
+        font-size: 1.75rem;
+    }
+}
+
+.menu>ol>li:nth-child(n + 3) {
+    grid-column: span 2;
+}
+
+.menu .sub-menu {
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 500px) {
+    .menu .sub-menu {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.menu .sub-menu li a {
+    font-size: 0.85rem;
+    color: #16457a;
+    background-color: #16457a;
+}
+
+@media (min-width: 450px) {
+    .menu .sub-menu li a {
+        font-size: 1rem;
+    }
+}
+
+.menu .sub-menu li:nth-child(3n) {
+    grid-column: span 2;
+}
+
+@media (min-width: 500px) {
+    .menu .sub-menu li:nth-child(3n) {
+        grid-column: span 1;
+    }
+}
+
+.menu-toggle {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2px;
+    position: relative;
+    cursor: pointer;
+    width: 3vi;
+    height: 3vi;
+    z-index: 100;
+    margin: 2vi;
+}
+
+.menu-toggle:before {
+    content: '×';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2.4rem;
+    line-height: 0.4;
+    color: #123965;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu-toggle span {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #123965;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+    transform-origin: 100% 100%;
+}
+
+.menu-toggle span:nth-child(1) {
+    transition-delay: 0.35s;
+}
+
+.menu-toggle span:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.menu-toggle span:nth-child(3) {
+    transition-delay: 0.45s;
+}
+
+.menu-toggle span:nth-child(4) {
+    transition-delay: 0.5s;
+}
+
+.menu-toggle span:nth-child(5) {
+    transition-delay: 0.55s;
+}
+
+.menu-toggle span:nth-child(6) {
+    transition-delay: 0.6s;
+}
+
+.menu-toggle span:nth-child(1),
+.menu-toggle span:nth-child(2) {
+    grid-column: span 3;
+}
+
+.menu-toggle span:nth-child(3),
+.menu-toggle span:nth-child(6) {
+    grid-column: span 2;
+}
+
+.menu-toggle span:nth-child(4),
+.menu-toggle span:nth-child(5) {
+    grid-column: span 4;
+}
+
+#menu-toggle-input {
+    display: none;
+}
+
+#menu-toggle-input:checked~.menu-toggle span {
+    transform: scaleX(0);
+}
+
+#menu-toggle-input:checked~.menu-toggle span:nth-child(1) {
+    transition-delay: 0.05s;
+}
+
+#menu-toggle-input:checked~.menu-toggle span:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+#menu-toggle-input:checked~.menu-toggle span:nth-child(3) {
+    transition-delay: 0.15s;
+}
+
+#menu-toggle-input:checked~.menu-toggle span:nth-child(4) {
+    transition-delay: 0.2s;
+}
+
+#menu-toggle-input:checked~.menu-toggle span:nth-child(5) {
+    transition-delay: 0.25s;
+}
+
+#menu-toggle-input:checked~.menu-toggle span:nth-child(6) {
+    transition-delay: 0.3s;
+}
+
+#menu-toggle-input:checked~.menu-toggle:before {
+    opacity: 1;
+    transition-delay: 0.75s;
+}
+
+#menu-toggle-input:checked~nav {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+
+#menu-toggle-input:checked~nav a {
+    color: white;
+    transform: translate(0, 0);
+}
+
+#menu-toggle-input:checked~nav>ol>li:nth-child(1)>a {
+    transition: color 0.3s 0.825s, transform 0.3s 0.35s ease;
+}
+
+#menu-toggle-input:checked~nav .sub-menu>li:nth-child(1)>a {
+    transition: color 0.3s 0.825s, transform 0.3s 0.5s ease;
+}
+
+#menu-toggle-input:checked~nav>ol>li:nth-child(2)>a {
+    transition: color 0.3s 0.825s, transform 0.3s 0.4s ease;
+}
+
+#menu-toggle-input:checked~nav .sub-menu>li:nth-child(2)>a {
+    transition: color 0.3s 0.825s, transform 0.3s 0.55s ease;
+}
+
+#menu-toggle-input:checked~nav>ol>li:nth-child(3)>a {
+    transition: color 0.3s 0.825s, transform 0.3s 0.45s ease;
+}
+
+#menu-toggle-input:checked~nav .sub-menu>li:nth-child(3)>a {
+    transition: color 0.3s 0.825s, transform 0.3s 0.6s ease;
+}
+
+#menu-toggle-input:checked~nav>ol>li:nth-child(4)>a {
+    transition: color 0.3s 0.825s, transform 0.3s 0.5s ease;
+}
+
+#menu-toggle-input:checked~nav .sub-menu>li:nth-child(4)>a {
+    transition: color 0.3s 0.825s, transform 0.3s 0.65s ease;
+}
+
+#menu-toggle-input:checked~nav>ol>li:nth-child(5)>a {
+    transition: color 0.3s 0.825s, transform 0.3s 0.55s ease;
+}
+
+#menu-toggle-input:checked~nav .sub-menu>li:nth-child(5)>a {
+    transition: color 0.3s 0.825s, transform 0.3s 0.7s ease;
+}
+
+.menu>ol>li:nth-child(1)>a {
+    transform: translate(calc(-100% - 12px), 0);
+    transition: color 0.3s, transform 0.3s 0.2s ease;
+}
+
+.sub-menu>li:nth-child(1)>a {
+    transform: translate(0, calc(-100% - 12px));
+    transition: color 0.3s, transform 0.3s 0.2s ease;
+}
+
+.menu>ol>li:nth-child(2)>a {
+    transform: translate(calc(-100% - 12px), 0);
+    transition: color 0.3s, transform 0.3s 0.25s ease;
+}
+
+.sub-menu>li:nth-child(2)>a {
+    transform: translate(0, calc(-100% - 12px));
+    transition: color 0.3s, transform 0.3s 0.25s ease;
+}
+
+.menu>ol>li:nth-child(3)>a {
+    transform: translate(calc(-100% - 12px), 0);
+    transition: color 0.3s, transform 0.3s 0.3s ease;
+}
+
+.sub-menu>li:nth-child(3)>a {
+    transform: translate(0, calc(-100% - 12px));
+    transition: color 0.3s, transform 0.3s 0.3s ease;
+}
+
+.menu>ol>li:nth-child(4)>a {
+    transform: translate(calc(-100% - 12px), 0);
+    transition: color 0.3s, transform 0.3s 0.35s ease;
+}
+
+.sub-menu>li:nth-child(4)>a {
+    transform: translate(0, calc(-100% - 12px));
+    transition: color 0.3s, transform 0.3s 0.35s ease;
+}
+
+.menu>ol>li:nth-child(5)>a {
+    transform: translate(calc(-100% - 12px), 0);
+    transition: color 0.3s, transform 0.3s 0.4s ease;
+}
+
+.sub-menu>li:nth-child(5)>a {
+    transform: translate(0, calc(-100% - 12px));
+    transition: color 0.3s, transform 0.3s 0.4s ease;
+}

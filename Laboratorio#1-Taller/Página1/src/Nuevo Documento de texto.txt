@@ -1,0 +1,119 @@
+.encabezado{
+    background-color: #003A5F;
+    display: flex;
+}
+
+#logo{
+    max-width: 5em;
+    padding: 1em;
+}
+
+#titulo{
+    font-family: 'SF Pixelate', sans-serif;
+    font-size: 3em;
+    -webkit-text-stroke: 0.4px #000;
+	text-shadow: 5px 5px 1px #000;
+    /*derecha, izquierda y opacidad*/
+    color: white;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+
+
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.juegos{
+    flex: 1;
+    min-width: 250px;
+}
+
+.juegos:first-child {
+    flex: 1.5;
+    padding: 25px;
+    background-color: transparent;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.juegos div{
+    padding: 25px;
+    background-color: transparent;
+    margin: 20px;
+    margin-left: 10vw;
+}
+
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    margin: 5vi;
+}
+
+.galeria{
+    display: flex;
+    width: 60vw;
+    height: 30vh;
+}
+
+.galeria img{
+    width: 0%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: 0.8s ease;
+}
+
+.galeria img:hover{
+    width: 25vw;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes animacion {
+
+    0%,
+    100% {
+        transform: translateX(0);
+        transform-origin: 50% 50%
+    }
+
+    15% {
+        transform: translateX(-30px) rotate(-6deg)
+    }
+
+    30% {
+        transform: translateX(15px) rotate(6deg)
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg)
+    }
+
+    60% {
+        transform: translateX(9px) rotate(2.4deg)
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg)
+    }
+}
+
+.imagenesjuegos{
+    width: 24vw;
+    height: 27vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
